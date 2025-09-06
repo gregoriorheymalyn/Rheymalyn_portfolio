@@ -63,6 +63,7 @@ body {
     text-align: center;
     margin: 200px;
     align-items: center;
+    gap: 60px;
 }
 
 .left-content{
@@ -127,6 +128,18 @@ body {
     padding-bottom: 100px;
 }
 
+/* ----SEC 02 SUBPAGE---------- */
+.sec02-images{
+    justify-content: center;
+    display: flex;
+    gap: 200px;
+}
+
+.sec02-images img{
+   width: auto; 
+   height: 100vh;
+}
+
 .sec03{
     margin:100px 200px 0px 200px;
     font-family: "Poppins", sans-serif;
@@ -182,4 +195,12 @@ footer{
     padding-top: 30px;
     color: #FEFEFE;
     text-align: center;
+}
+
+/* -------RESPONSIVE------------- */
+
+@media (max-width: 600px) {
+  .sec01 {
+    flex-direction: column;
+  }
 }
