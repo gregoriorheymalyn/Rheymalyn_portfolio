@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+<script src="script.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio</title>
 </head>
@@ -55,11 +56,18 @@
                 <p class="sec01-headline-right">Works</p>
             </div>
 
-            <div class="sec02-images">
-                <img class="img03" src="img/img04.png">
-                <img class="img03" src="img/img05.png">
-                <img class="img03" src="img/img06.png">
+        <div class="sec02-slider">
+            <button class="slide-btn prev" aria-label="Previous">◀</button>
+
+            <div class="sec02-track">
+                <img src="img/img04.png" alt="work 1">
+                <img src="img/img05.png" alt="work 2">
+                <img src="img/img06.png" alt="work 3">
             </div>
+
+            <button class="slide-btn next" aria-label="Next">▶</button>
+        </div>
+        </div>
 
             <a class="btn" href="img/rheymalyn_works.pdf" download>See all works (PDF)</a>
 

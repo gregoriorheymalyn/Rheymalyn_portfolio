@@ -149,16 +149,64 @@ img, video, iframe {
     padding-bottom: 100px;
 }
 
-/* ----SEC 02 SUBPAGE---------- */
-.sec02-images{
-    justify-content: center;
-    display: flex;
-    gap: 100px;
+.sec02-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.sec02-images img{
-   width: auto; 
-   height: 100vh;
+/* .sec02-images img {
+  max-width: 300px;
+} */
+
+.sec02-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* track (we translate this) */
+.sec02-track {
+  display: flex;
+  gap: 0;
+  transition: transform .45s ease;
+}
+
+/* images (default desktop behavior: 3 across) */
+.sec02-track img {
+  display: block;
+  width: 33.333%;   /* default: 3 images per row */
+  flex-shrink: 0;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* arrows (hidden on desktop) */
+.slide-btn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  z-index: 10;
+  color: #fff;      /* adjust for visibility */
+  text-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* ----SEC 02 SUBPAGE---------- */
+.sec02-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sec02-images img {
+  max-width: 300px;
 }
 
 .sec03{
@@ -265,16 +313,10 @@ footer{
   }
 
   /* ---SEC02--- */
-  .sec02-images {
-    overflow-x: auto;     /* enable horizontal scroll */
-    scroll-snap-type: x mandatory; /* smooth snap scrolling */
-    -webkit-overflow-scrolling: touch; /* smooth on iOS */
+  .sec02{
+    text-align: center;
   }
 
-  .sec02-images img {
-    flex: 0 0 100%;        /* each image takes ~80% width */
-    scroll-snap-align: center;
-  }
 
   /* ---SEC03--- */
     .sec03{
@@ -318,4 +360,35 @@ footer{
     font-size: 48px;
     max-width: 400px;
   }
+
+  /* ---SEC02--- */
+  .sec02-images img {
+    width: 33.33%; /* 3 per row */
+  }
+
+  /* hide arrows on desktop if you want */
+  .slide-btn {
+    display: none;
+  }
+}
+
+/* Mobile: slider */
+@media (max-width: 600px) {
+  .sec02-track img {
+    width: 100%;    /* 1 slide = 100% of container */
+  }
+  .slide-btn { display: block; } /* show arrows on mobile */
+
+  .slide-btn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  color: #000000;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  display: block;}
 }
