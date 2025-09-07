@@ -346,6 +346,10 @@ footer{
       flex-direction: column;
     } */
 
+    .mv-text{
+      margin-top: 100px;
+    }
+
     .first-mv-text, .second-mv-text{
       font-size: 38px;
     }
