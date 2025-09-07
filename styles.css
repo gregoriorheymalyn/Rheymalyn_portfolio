@@ -48,7 +48,7 @@ img, video, iframe {
 .second-mv-text{
     color: #674730;
     font-family: "Radley", serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: italic;
 }
 
@@ -117,7 +117,7 @@ img, video, iframe {
 .sec01-headline-right{
     color: #674730;
     font-family: "Radley", serif;
-    font-weight: 400;
+    font-weight: 700;
     font-style: italic;
 }
 
@@ -257,7 +257,7 @@ footer{
   padding: 0;
 }
 
-.footer-subtext{
+.footer-subtext, .footer-info{
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: italic; 
@@ -320,12 +320,12 @@ footer{
 
   /* ---SEC03--- */
     .sec03{
-        margin: 100px 60px 100px 60px;
+      margin: 100px 30px 100px 30px
     }
 
     .footer-headline {
-    font-size: 48px;
-    max-width: 600px;
+      font-size: 48px;
+      max-width: 600px;
   }
 }
 
@@ -333,17 +333,39 @@ footer{
 @media (max-width: 600px) {
 
     /* ---MV---- */
-    .headline{
+    /* .headline{
       flex-direction: column;
+    } */
+
+    .first-mv-text, .second-mv-text{
+      font-size: 38px;
     }
+    
+    .subtext p{
+      font-size: 20px;
+    }
+
+    .btn-scroll{
+      font-size: 16px;
+    }
+
+    .icon{
+      height: 30px;
+    }
+
+  /* ---SEC01---- */
 
   .sec01 {
     gap: 30px;                   /* reduce gap */
-    margin: 60px 15px;
+    margin: 60px 30px;
   }
 
   .sec01-headline {
-    font-size: 40px;             /* smaller title */
+    font-size: 38px;             /* smaller title */
+  }
+
+  .sec01-headline-left{
+    padding-right: 15px;
   }
 
   .left-content-text {
@@ -370,10 +392,12 @@ footer{
   .slide-btn {
     display: none;
   }
-}
 
-/* Mobile: slider */
-@media (max-width: 600px) {
+  .sec03 p{
+    font-size: 20px;
+  }
+
+  /* Mobile: slider */
   .sec02-track img {
     width: 100%;    /* 1 slide = 100% of container */
   }
@@ -385,10 +409,17 @@ footer{
   top: 50%;
   transform: translateY(-50%);
   background: none;
-  color: #000000;
+  color: #674730;
   border: none;
   font-size: 2rem;
   cursor: pointer;
   z-index: 10;
-  display: block;}
+  display: block;
+}
+
+/* ---FOOTER---- */
+.footer-subtext, .footer-info{
+  font-size: 20px;
+  padding: 0 30px 0 30px;
+}
 }
