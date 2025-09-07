@@ -155,9 +155,9 @@ img, video, iframe {
   gap: 20px;
 }
 
-/* .sec02-images img {
+.sec02-images img {
   max-width: 300px;
-} */
+}
 
 .sec02-slider {
   position: relative;
@@ -178,7 +178,6 @@ img, video, iframe {
   width: 33.333%;   /* default: 3 images per row */
   flex-shrink: 0;
   height: auto;
-  border-radius: 10px;
 }
 
 /* arrows (hidden on desktop) */
