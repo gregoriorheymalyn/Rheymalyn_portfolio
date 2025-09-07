@@ -387,11 +387,6 @@ footer{
     font-size: 14px;
   }
 
-  .footer-headline {
-    font-size: 48px;
-    max-width: 350px;
-  }
-
   /* ---SEC02--- */
   .sec02-images img {
     width: 33.33%; /* 3 per row */
@@ -431,4 +426,10 @@ footer{
   font-size: 20px;
   padding: 0 30px 0 30px;
 }
+
+  .footer-headline {
+    font-size: 48px;
+    max-width: 350px;
+    padding-bottom: 20px;
+  }
 }
