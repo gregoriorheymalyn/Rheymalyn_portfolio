@@ -1,18 +1,8 @@
 body {
-    max-width: 1600px;
+    max-width: 1920px;
     margin: 0 auto;
     background-color: #F4F1E8;
   }
-
-  /* * {
-  outline: 1px solid red;
-} */
-
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* fallback fix */
-}
 
 img, video, iframe {
   max-width: 100%;
@@ -27,7 +17,7 @@ img, video, iframe {
 
 .mv-text{
     text-align: center;
-    margin-top: 150px;     
+    margin-top: 150px;
     /* max-width: 1920px;   */
 }
 
