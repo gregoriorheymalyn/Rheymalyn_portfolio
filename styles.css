@@ -327,7 +327,8 @@ footer{
 
   /* ---SEC03--- */
     .sec03{
-      margin: 100px 30px 100px 30px
+      margin: 100px 30px 100px 30px;
+      padding: 0;
     }
 
     .footer-headline {
@@ -367,12 +368,13 @@ footer{
   /* ---SEC01---- */
 
   .sec01 {
-    gap: 30px;                   /* reduce gap */
-    margin: 60px 30px;
+    gap: 60px;
+    margin: 100px 30px;
+
   }
 
   .sec01-headline {
-    font-size: 38px;             /* smaller title */
+    font-size: 38px;   
   }
 
   .sec01-headline-left{
@@ -387,6 +389,7 @@ footer{
   .btn {
     padding: 15px 40px;
     font-size: 14px;
+    margin-top: 30px;
   }
 
   /* ---SEC02--- */
@@ -394,20 +397,24 @@ footer{
     width: 33.33%; /* 3 per row */
   }
 
-  /* hide arrows on desktop if you want */
+  /* hide arrows on desktop*/
   .slide-btn {
     display: none;
   }
 
   .sec03 p{
     font-size: 20px;
+    padding: 0;
+    margin: 0;
   }
 
   /* Mobile: slider */
   .sec02-track img {
     width: 100%;    /* 1 slide = 100% of container */
   }
-  .slide-btn { display: block; } /* show arrows on mobile */
+  .slide-btn { 
+    display: block; 
+  } /* show arrows on mobile */
 
   .slide-btn {
   display: none;
@@ -424,6 +431,10 @@ footer{
 }
 
 /* ---FOOTER---- */
+footer{
+  margin-top: 100px;
+}
+
 .footer-subtext, .footer-info{
   font-size: 20px;
   padding: 0 30px 0 30px;
