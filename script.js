@@ -23,16 +23,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function updateSizes() {
     slideWidth = slider.clientWidth;
-    // force each slide to equal the container width (mobile)
-    slides.forEach(img => img.style.width = slideWidth + "px");
-    // set track width explicitly to avoid extra space issues
-    track.style.width = (slideWidth * slides.length) + "px";
+    slides.forEach(img => img.style.width = slideWidth + "px");  // force each slide to equal the container width (mobile)
+    track.style.width = (slideWidth * slides.length) + "px";     // set track width explicitly to avoid extra space issues
   }
 
   function showImage(index) {
     if (!enabled) return;
-    // wrap index safely
-    currentIndex = ((index % slides.length) + slides.length) % slides.length;
+    currentIndex = ((index % slides.length) + slides.length) % slides.length; // wrap index safely
     track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
   }
 
@@ -44,8 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
     prev.addEventListener("click", onPrev);
     next.addEventListener("click", onNext);
     window.addEventListener("resize", onWindowResize);
-    // small safety reflow in case widths weren't computed yet
-    setTimeout(() => { updateSizes(); showImage(currentIndex); }, 50);
+    setTimeout(() => { updateSizes(); showImage(currentIndex); }, 50);  // small safety reflow in case widths weren't computed yet
   }
 
   function disableSlider() {
