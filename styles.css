@@ -74,12 +74,17 @@ img, video, iframe {
 /* --------SECTION 01 ---------------------------*/
 
 .sec01{
-    max-width: 1600px;
+    /* max-width: 1600px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     text-align: center;
     margin: 200px;
+    align-items: center;
+    gap: 60px; */
+        max-width: 1600px;
+    margin: 200px auto; /* ⬅ top/bottom only */
+    display: flex;
     align-items: center;
     gap: 60px;
 }
@@ -116,6 +121,23 @@ img, video, iframe {
     font-family: "Radley", serif;
     font-weight: 700;
     font-style: italic;
+}
+
+/* .right-content img{
+  width: fit-content;
+  text-align: right;
+} */
+
+.right-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right-content img {
+  max-width: 580px;
+  width: 100%;
+  height: auto;
 }
 
 .btn{
@@ -155,7 +177,7 @@ img, video, iframe {
 }
 
 .sec02-images img {
-  max-width: 300px;
+  max-width: 300px
 }
 
 .sec02-slider {
