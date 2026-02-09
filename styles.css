@@ -1,7 +1,7 @@
 body {
     max-width: 1920px;
     margin: 0 auto;
-    background-color: #F4F1E8;
+    background-color: #f0eeee;
   }
 
 img, video, iframe {
@@ -35,7 +35,7 @@ img, video, iframe {
 }
 
 .second-mv-text{
-    color: #674730;
+    color: #434343;
     font-family: "Radley", serif;
     font-weight: 700;
     font-style: italic;
@@ -117,7 +117,7 @@ img, video, iframe {
 }
 
 .sec01-headline-right{
-    color: #674730;
+    color: #434343;
     font-family: "Radley", serif;
     font-weight: 700;
     font-style: italic;
@@ -255,7 +255,7 @@ footer{
     margin: 0 auto;
     margin-top: 200px;
     padding: 150px 0 150px 0;
-    background-color: #674730;
+    background-color: #434343;
 }
 
 .footer-headline {
@@ -455,7 +455,7 @@ footer{
   top: 50%;
   transform: translateY(-50%);
   background: none;
-  color: #674730;
+  color: #434343;
   border: none;
   font-size: 2rem;
   cursor: pointer;
