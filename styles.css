@@ -187,10 +187,21 @@ img, video, iframe {
 }
 
 /* track (we translate this) */
-.sec02-track {
+/* .sec02-track {
   display: flex;
   gap: 0;
   transition: transform .45s ease;
+  flex-wrap: wrap;
+} */
+ .sec02-track {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 100px;     /* vertical space */
+  /* column-gap: 30px; */
+}
+
+.sec02-track img {
+  width: calc(33.333% - 14px);
 }
 
 /* images (default desktop behavior: 3 across) */
